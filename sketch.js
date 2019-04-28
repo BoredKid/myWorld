@@ -10,6 +10,7 @@ function setup() {
 
     balls.tab.push(new Ball(width / 2, height / 2, 40, "purple", "http://drawingbot.boredkid.io", "DrawingBot"));
     balls.tab.push(new Ball(width, height, 40, "blue", "https://www.linkedin.com/in/cisskane/", "LinkedIn"));
+    balls.tab.push(new Ball(width / 5, height, 40, "#333", "https://github.com/BoredKid", "Github "));
 }
 
 function draw() {
