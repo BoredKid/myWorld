@@ -16,13 +16,13 @@ function setup() {
 function draw() {
     // put drawing code here
     document.getElementsByTagName("body")[0].style.cursor = "auto";
-    background('#D75F09');
+    background('#7D3705');
     balls.act();
 }
 
 function windowResized() {
     resizeCanvas(window.innerWidth, window.innerHeight);
-    background('#D75F09');
+    background('#7D3705');
 }
 
 function mousePressed() {
