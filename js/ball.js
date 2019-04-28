@@ -24,8 +24,7 @@ class Ball {
         //ballColor.setAlpha(80);
         fill(ballColor);
         ellipse(this.x, this.y, this.radius * 2);
-        fill('rgba(0,0,0,0.1)');
-        arc(this.x, this.y, this.radius * 2, this.radius*2, PI, 0)
+        this.drawGradient()
 
         // write name of app
         fill("#fbefe6");
@@ -45,6 +44,16 @@ class Ball {
             this.speedy *= -1;
         }
     }
+
+    drawGradient() {
+        const color = this.color;
+        console.log(color);
+        for (let gradRad = this.radius; gradRad >= 0; gradRad -= 1) {
+            const coef = 1.5 - gradRad/ this.radius;
+            fill(color.levels[0]*coef, color.levels[1]*coef, color.levels[2]*coef);
+            ellipse(this.x , this.y, gradRad*2, gradRad*2);
+        }
+      }
 
     changePointer() {
         if (this.isUnderMouse()) {

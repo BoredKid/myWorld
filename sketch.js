@@ -8,9 +8,9 @@ function setup() {
     canvas.parent('sketch-holder');
     balls = new Balls();
 
-    balls.tab.push(new Ball(width / 2, height / 2, 40, "purple", "http://drawingbot.boredkid.io", "DrawingBot"));
-    balls.tab.push(new Ball(width, height, 40, "blue", "https://www.linkedin.com/in/cisskane/", "LinkedIn"));
-    balls.tab.push(new Ball(width / 5, height, 40, "#333", "https://github.com/BoredKid", "Github "));
+    balls.tab.push(new Ball(width / 2, height / 2, 40, color("purple"), "http://drawingbot.boredkid.io", "DrawingBot"));
+    balls.tab.push(new Ball(width, height, 40, color("blue"), "https://www.linkedin.com/in/cisskane/", "LinkedIn"));
+    balls.tab.push(new Ball(width / 5, height, 40, color("#333"), "https://github.com/BoredKid", "Github "));
 }
 
 function draw() {
