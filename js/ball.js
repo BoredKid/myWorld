@@ -7,8 +7,8 @@ class Ball {
         this.url = url;
         this.name = name;
         this.color = color;
-        this.speedx = 1.5;
-        this.speedy = 1.5;
+        this.speedx = 1.2;
+        this.speedy = 1.2;
     }
 
     act() {
@@ -21,15 +21,25 @@ class Ball {
         // draw the circle
         noStroke();
         let ballColor = color(this.color);
-        //ballColor.setAlpha(80);
+
+        //shadow of circle
+        fill(0, 50);
+        ellipse(this.x + 4, this.y + 4, this.radius * 2);
+        //circle
         fill(ballColor);
         ellipse(this.x, this.y, this.radius * 2);
-        this.drawGradient()
 
         // write name of app
-        fill("#fbefe6");
+        
         rectMode(CENTER);
         textAlign(CENTER, CENTER);
+        // shadow of text
+        fill(0, 80);
+        for(let i=0;i<6;i++){
+            text(this.name, this.x + i, this.y + this.radius / 6 + i, this.radius, this.radius);
+        }
+        // text
+        fill("#fbefe6");
         text(this.name, this.x, this.y + this.radius / 6, this.radius, this.radius);
         rectMode(CORNER);
     }
@@ -44,16 +54,6 @@ class Ball {
             this.speedy *= -1;
         }
     }
-
-    drawGradient() {
-        const color = this.color;
-        console.log(color);
-        for (let gradRad = this.radius; gradRad >= 0; gradRad -= 1) {
-            const coef = 1.5 - gradRad/ this.radius;
-            fill(color.levels[0]*coef, color.levels[1]*coef, color.levels[2]*coef);
-            ellipse(this.x , this.y, gradRad*2, gradRad*2);
-        }
-      }
 
     changePointer() {
         if (this.isUnderMouse()) {

@@ -14,6 +14,7 @@ html {
 #welcomeMessage {
     color: #ebaf84;
     text-align: center;
+    opacity: 0.5;
 }
 
 #sketch-holder {
