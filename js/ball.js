@@ -39,7 +39,8 @@ class Ball {
             text(this.name, this.x + i, this.y + this.radius / 6 + i, this.radius, this.radius);
         }
         // text
-        fill("#fbefe6");
+        textFont('Hind Madurai');
+        fill("#f5f5f5");
         text(this.name, this.x, this.y + this.radius / 6, this.radius, this.radius);
         rectMode(CORNER);
     }

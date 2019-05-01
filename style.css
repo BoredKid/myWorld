@@ -11,10 +11,19 @@ html {
     height: 100%;
 }
 
-#welcomeMessage {
+h2 {
     color: #ebaf84;
-    text-align: center;
-    opacity: 0.5;
+    padding-left: 15px;
+    padding-top:15px;
+    font-family: 'Englebert', sans-serif;
+}
+
+#welcomeMessage {
+    opacity: 0.6;
+}
+
+#welcomeMessageShadow {
+    opacity: 0.3;
 }
 
 #sketch-holder {
