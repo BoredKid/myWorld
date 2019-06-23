@@ -34,10 +34,10 @@ class Ball {
         rectMode(CENTER);
         textAlign(CENTER, CENTER);
         // shadow of text
-        fill(0, 80);
-        for(let i=0;i<6;i++){
-            text(this.name, this.x + i, this.y + this.radius / 6 + i, this.radius, this.radius);
-        }
+        // fill(0, 80);
+        // for(let i=0;i<6;i++){
+        //     text(this.name, this.x + i, this.y + this.radius / 6 + i, this.radius, this.radius);
+        // }
         // text
         textFont('Hind Madurai');
         fill("#f5f5f5");

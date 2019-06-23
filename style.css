@@ -12,18 +12,18 @@ html {
 }
 
 h2 {
-    color: #ebaf84;
+    color: #DF864E;
     padding-left: 15px;
     padding-top:15px;
     font-family: 'Englebert', sans-serif;
 }
 
 #welcomeMessage {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #welcomeMessageShadow {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #sketch-holder {
